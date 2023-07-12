@@ -11,13 +11,7 @@ app.use(bodyParser.urlencoded({
 }))
 app.use(cors())
 
-// app.use(express.static('css', {
-//   setHeaders: (res, path) => {
-//     if (path.endsWith('.css')) {
-//       res.setHeader('Content-Type', 'text/css');
-//     }
-//   },
-// }));
+
 app.use(function (req, res, next){
 
   res.setHeader('Access-Control-Allow-Origin', '*');
